@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Геодезичні послуги. Топографічна зйомка, кадастрові роботи."
+    />
+    <meta
+      name="keywords"
+      content="геодезія, топографічна зйомка, кадастрові роботи"
+    />
+    <title>Геодезія</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1>Геодезичні послуги</h1>
+      <p>Точність, надійність та професіоналізм у кожній вимірювальній точці</p>
+      <button onclick="scrollToSection('services')">Дізнатись більше</button>
+    </section>
+
+    <section id="services">
+      <h2>Наші послуги</h2>
+      <div class="service">
+        <h3>Топографічна зйомка</h3>
+        <p>Високоточна зйомка для потреб будівництва та проектування.</p>
+      </div>
+      <div class="service">
+        <h3>Кадастрові роботи</h3>
+        <p>
+          Оформлення та реєстрація земельних ділянок згідно чинного
+          законодавства.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Інженерно-геодезичні вишукування</h3>
+        <p>
+          Комплексне дослідження для визначення найкращого місця для
+          будівництва.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Про нас</h2>
+      <p>
+        Наша компанія понад 10 років надає професійні геодезичні послуги. Ми
+        використовуємо сучасне обладнання та технології для забезпечення
+        найвищої точності вимірювань.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Контакти</h2>
+      <p>Телефон: +380973378046</p>
+      <p>Email: dimitriy.krog@gmail.com</p>
+
+      <form action="sendmail.php" method="POST">
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Ваша електронна пошта:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Геодезія. Всі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
