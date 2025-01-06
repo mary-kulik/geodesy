@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mary-kulik.github.io/geodesy/sitemap.xml
